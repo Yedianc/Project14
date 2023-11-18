@@ -1,0 +1,256 @@
+@import url('https://fonts.cdnfonts.com/css/morehla');
+/* font-family: 'Morehla', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+/* font-family: 'JetBrains Mono', sans-serif; */
+/* font-family: 'JetBrains Mono NL', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/mad-hacker');
+/* font-family: 'MAD hacker', sans-serif; */
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: #ffffff;
+}
+#header{
+    width: 100%;
+    height: 50vh;
+}
+h2{
+  font-family: 'JetBrains Mono NL', sans-serif;
+    display: flex;
+    justify-content: center;
+    border-width: 1px;
+    padding: 0 0 40px;
+}
+.p-color{
+    color: #00ff00;
+    font-family: 'MAD hacker', sans-serif;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color:  #00ff00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+a{
+    color: #909090;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+a:hover{
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h2{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+nav .fas{
+    display: none
+  }
+
+/*-------------------------------------project---------------------*/
+
+.container1 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: #262626;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+.item__content:hover{
+  background: linear-gradient( #6dfc6d, transparent) #00ff00;
+    text-decoration: none;
+    transition: background-color 1s;
+    color: #080808;
+    transform: scale(1.06);
+    transition: transform .3s ease-in;
+}
+
+.item__content h2{
+  font-size: 2rem;
+}
+
+.item__content p{
+  font-family: 'JetBrains Mono NL', sans-serif;
+}
+
+.span_project{
+  color: #00ff00;
+}
+/*---------------responsive-------------------------------*/
+@media only screen and (max-width: 600px){
+  
+    .header-text{
+      margin-top: 50%;
+      font-size: 16px;
+    }
+    .header-text h2{
+      font-size: 45px;
+      font-family: 'MAD hacker', sans-serif;
+    }
+    .p-color{
+        color: #00ff00;
+        font-family: 'MAD hacker', sans-serif;
+    }
+   
+    nav .fas:hover{
+        color: #ababab;
+    }
+    nav .fas{
+      display: block;
+      font-size: 25px;
+    }
+    nav ul{
+      background: #00ff00;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px;
+      
+    }
+   
+    nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+    .sub-title{
+      font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+      flex-basis: 100%;
+    }
+    .about-col-1{
+      margin-bottom: 30px;
+    }
+    .about-col-2{
+      font-size: 14px;
+    }
+    .tab-links{
+      font-size: 16px;
+      margin-right: 20px;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .container1 {
+        max-width: 400px;
+      }
+
+      .item{
+        margin-bottom: 10%;
+      }
+      
+  }
+  
+/*--------------------------------------------------*/
+
